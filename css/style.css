@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.church-name {
+    align-items: center;
+}
+
+.church-name p {
+    padding-left: 32px;
+    font-size: 10px;
+    color: #00396A;
+}
+
+.church-name img {
+    color: #00396A;
+    width: 100px;
+    padding-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 25px;
+    color: #00396A;
+}
+
+nav a:hover {
+    color: #6395C6;
+}
+
+.navigation button {
+    margin-right: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    background: #00396A;
+    border: none;
+    border-radius: 5px;
+}
+
+.navigation button:hover {
+    background: #6395C6;
+}
+
+nav a.active {
+    color: #6395C6;
+}
+
+.navigation-responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: 255 255 255 0.2;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.navigation-responsive a, .ri-close-large-fill {
+    padding: 15px 25px 15px 25px;
+}
+
+.navigation-responsive button {
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    background: #00396A;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 20px 10px 20px;
+}
+
+.navigation-responsive button:hover {
+    cursor: pointer;
+    background: #6395C6;
+}
+
+.ri-menu-fill {
+    font-size: 30px;
+    margin-right: 25px;
+    color: #00396A;
+    cursor: pointer;
+    display: none;
+}
+
+.ri-close-large-fill {
+    font-size: 30px;
+    color: #00396A;
+    cursor: pointer;
+}
+
+
+
+.first-section {
+    background-image: url(/images/ppl5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    height: 80vh;
+    color: white;
+    filter: grayscale(100%) brightness(100%);
+}
+
+
+.contains-child {
+    text-align: center;
+    padding-top: 15rem;
+    font-size: 30px;
+}
+
+.contains-child2 {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.contains-child2 em {
+    font-size: 20px;
+}
+
+.second-section {
+    background-color: #6395C6;
+    background-color: black;
+    /* background-color: #00396A; */
+    color: white;
+    padding: 50px 100px;
+}
+
+.contains2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activities {
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    color: #6395C6;
+}
+
+.activity-dates h2 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #6395C6;
+}
+
+.sunday-service, .bible-study, .prayer-meeting, .choir-practice {
+    padding-bottom: 25px;
+}
+
+.event-label {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.event-date {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.monthly-activities h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6395C6;
+}
+
+.contains3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 100px;
+    flex-wrap: wrap;
+}
+
+.contains3 span {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.contains3 span:hover {
+    cursor: context-menu;
+    color: #00396A;
+}
+
+.new-here button, .livestream button, .support-by-giving button {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.new-here button:hover, .livestream button:hover, .support-by-giving button:hover {
+    cursor: pointer;
+    border: 1px solid #6395C6;
+    color: #6395C6;
+}
+
+footer {
+    background: #6395C6;
+    color: white;
+}
+
+.footer-logo {
+    margin-bottom: -70px;
+}
+
+.footer-logo img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.contact-info p {
+    padding-top: 10px;
+}
+
+.social-media {
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.ri-facebook-circle-fill, .ri-twitter-x-fill, .ri-instagram-fill {
+    color: white;
+}
+
+.ri-facebook-circle-fill:hover, .ri-twitter-x-fill:hover, .ri-instagram-fill:hover {
+    text-decoration: line-through;
+}
+
+.email-signup h1 {
+    padding-bottom: 10px;
+}
+
+.email-signup label {
+    font-size: 20px;
+}
+
+.email-signup input, .email-signup button {
+    padding: 10px;
+    font-size: 15px;
+    color: #00396A;
+    border: none;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+}
+
+.email-signup button:hover {
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.ri-menu-line {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .ri-menu-fill {
+        display: block;
+        font-size: 40px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .first-section {
+        background-image: url(/images/ppl5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        height: 60vh;
+        filter: grayscale(100%) brightness(100%);
+    }
+
+    .activities {
+        padding-bottom: 30px;
+        font-size: 40px;
+    }
+    
+
+    .contains-child {
+        text-align: center;
+        padding-top: 14rem;
+        font-size: 30px;
+    }
+
+    
+    .contains-child2 {
+        padding-top: 25px;
+        text-align: center;
+        color: #6395C6;
+    }
+    
+    .contains-child2 em {
+        font-size: 20px;
+    }
+
+    .contains2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+
+    .support-by-giving {
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media(max-width: 760px) {
+    .first-section {
+        background-image: url(/images/ppl5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        height: 65vh;
+        filter: grayscale(100%) brightness(100%);
+    }
+
+
+    .contains-child {
+        text-align: center;
+        padding-top: 14rem;
+        font-size: 25px;
+    }
+
+    
+    .contains-child2 {
+        padding-top: 25px;
+        text-align: center;
+        color: #6395C6;
+        font-size: 18px;
+    }
+    
+    .contains-child2 em {
+        font-size: 20px;
+        color: white;
+    }
+
+    .contains3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .support-by-giving {
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .new-here h1, .livestream h1, .support-by-giving h1 {
+        text-align: center;
+    }
+
+    .footer-logo img{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 220px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+    
+    .social-media {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .footer-content {
+        /* /* display: flex;
+        justify-content: space-between; */
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
+        align-items: center;
+        padding: 100px 50px;
+    }
+
+    .newsletter-form button {
+        margin-top: 10px;
+    }
+}
